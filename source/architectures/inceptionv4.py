@@ -1,6 +1,8 @@
 import torch
 import torch.nn as nn
 
+#https://github.com/zhulf0804/Inceptionv4_and_Inception-ResNetv2.PyTorch
+
 class Conv2d(nn.Module):
     def __init__(self, in_channels, out_channels, kernel_size, padding, stride=1, bias=True):
         super(Conv2d, self).__init__()
