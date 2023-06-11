@@ -9,6 +9,7 @@ import architectures.inceptionet
 import architectures.resnet
 import architectures.inceptionv4
 import architectures.incresnet
+import architectures.mobilenet
 import custom_dataset
 # Load the saved model
 model = torch.load(path_cnn_file)

@@ -7,6 +7,7 @@ import architectures.inceptionet
 import architectures.resnet
 import architectures.inceptionv4
 import architectures.incresnet
+import architectures.mobilenet
 import custom_dataset
 
 
@@ -31,7 +32,8 @@ def main():
     #cnn = resnet.ResNet152(3, 1) # ResNet50, ResNet101 or ResNet152, increasing in size
     #cnn = architectures.inceptionet.GoogLeNet(num_classes=1)
     #cnn = architectures.inceptionv4.Inceptionv4(3,1)
-    cnn = architectures.incresnet.Inception_ResNetv2(3,1)
+    #cnn = architectures.incresnet.Inception_ResNetv2(3,1)
+    cnn = architectures.mobilenet.MobileNetV2(3,1)
     #cnn = torch.load(path_cnn_file) # use this to load current cnn instead of starting over
     cnn.cuda()  
     criterion = torch.nn.MSELoss()
