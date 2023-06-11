@@ -7,7 +7,9 @@ from globals import *
 import architectures.cnn
 import architectures.inceptionet
 import architectures.resnet
-
+import architectures.inceptionv4
+import architectures.incresnet
+import custom_dataset
 # Load the saved model
 model = torch.load(path_cnn_file)
 model.eval()  # Set the model to evaluation mode
