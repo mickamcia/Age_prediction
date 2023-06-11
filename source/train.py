@@ -33,12 +33,12 @@ def main():
     print("loaded")
     #cnn = definition.CNN() #this is my, small and generic CNN
     #cnn = resnet.ResNet152(3, 1) # ResNet50, ResNet101 or ResNet152, increasing in size
-    #cnn = architectures.inceptionet.GoogLeNet(num_classes=1)
+    cnn = architectures.inceptionet.GoogLeNet(num_classes=1)
     #cnn = architectures.inceptionv4.Inceptionv4(3,1)
     #cnn = architectures.incresnet.Inception_ResNetv2(3,1)
     #cnn = architectures.mobilenet.MobileNetV2(3,1)
     #cnn = architectures.vgg19.VGG19(1)
-    cnn = architectures.resnext.resnext152()
+    #cnn = architectures.resnext.resnext50()
     #cnn = torch.load(path_cnn_file) # use this to load current cnn instead of starting over
     cnn.cuda()  
     criterion = torch.nn.MSELoss()
