@@ -60,7 +60,7 @@ def main():
     for filename in os.listdir(path_training_set):
         if filename.endswith('.jpg') or filename.endswith('.png'):
             label = float(filename.split('_')[0])
-            file_path = os.path.join(path_data_set, filename)
+            file_path = os.path.join(path_training_set, filename)
             image = cv.imread(file_path)
             for i in range(int(min(5, float(1 / distrib[int(label) // 5])))):
                 augmented_image = add_rotation(image, max_angle * random.uniform(-1, 1))

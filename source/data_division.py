@@ -30,8 +30,8 @@ def copy_files(source_dir, destination_dir1, destination_dir2, amount_to_copy):
 
 def main():
     amount_to_copy = 0.10
-    clear_folder(path_training_set)
-    clear_folder(path_validation_set)
+    #clear_folder(path_training_set)
+    #clear_folder(path_validation_set)
     copy_files(path_data_set, path_training_set, path_validation_set, amount_to_copy)
 
 
