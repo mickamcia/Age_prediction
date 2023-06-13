@@ -42,7 +42,8 @@ def main():
     #cnn = torch.load(path_cnn_file) # use this to load current cnn instead of starting over
     cnn.cuda()  
     criterion = torch.nn.MSELoss()
-    optimizer = torch.optim.Adagrad(cnn.parameters(), lr=0.001)
+    optimizer = torch.optim.Adam(cnn.parameters(), lr = 0.001, )
+    #optimizer = torch.optim.Adagrad(cnn.parameters(), lr=0.001)
     for epoch in range(num_epochs):
         running_loss = 0.0
         for i, data in enumerate(trainloader):

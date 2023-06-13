@@ -1,8 +1,9 @@
 /DataSet
+/NewDataSet
 /TrainingSet
 /TrainingSetAugmented
 /ValidationSet
-/DataSet.zip
+/sets_zip
 /TrainedNets
 /source/CNN
 */__pycache__

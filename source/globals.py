@@ -1,4 +1,4 @@
-path_data_set = '/home/user/repos/WTUM/DataSet'
+path_data_set = '/home/user/repos/WTUM/NewDataSet'
 
 path_validation_set = '/home/user/repos/WTUM/ValidationSet'
 path_training_set = '/home/user/repos/WTUM/TrainingSet'

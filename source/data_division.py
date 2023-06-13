@@ -17,7 +17,9 @@ def copy_files(source_dir, destination_dir1, destination_dir2, amount_to_copy):
     
     for file_name in file_list:
         source_file = os.path.join(source_dir, file_name)
-
+        label = float(file_name.split('_')[0])
+        if label < 5 or label > 90:
+            continue
         if amount_to_copy < random.random():
             destination_file = os.path.join(destination_dir1, file_name)
         else:
