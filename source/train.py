@@ -64,7 +64,7 @@ def main():
                 print(f'Epoch: {epoch+1}, Batch: {i+1}, Loss: {(running_loss / print_every) ** 0.5}')
                 running_loss = 0.0
 
-        torch.save(cnn.cpu(), path_cnn_file)
+        torch.save(cnn.cpu(), path_cnn_file + "_" + str(epoch))
         cnn.cuda()
         print("saved")
 

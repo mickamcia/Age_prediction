@@ -5,6 +5,6 @@
 /ValidationSet
 /sets_zip
 /TrainedNets
-/source/CNN
+/source/CNN*
 */__pycache__
 */*/__pycache__
