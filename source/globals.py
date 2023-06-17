@@ -5,3 +5,5 @@ path_training_set = '/home/user/repos/WTUM/TrainingSet'
 path_training_set_augmented = '/home/user/repos/WTUM/TrainingSetAugmented'
 
 path_cnn_file = '/home/user/repos/WTUM/source/CNN'
+
+GPU_ENABLED = False
